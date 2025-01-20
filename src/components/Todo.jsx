@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux"
 import store, { addTask, deleteTask } from "../store";
 
-export const Todo = () => {
+const Todo = () => {
     const tasks = useSelector((state) => state.task);
     const [taskname, setTaskname] = useState("");
     const dispatch = useDispatch();
@@ -38,3 +38,4 @@ export const Todo = () => {
         </div>
     )
 }
+export default Todo;
